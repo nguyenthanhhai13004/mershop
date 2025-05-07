@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: outfit;
+* {
+  font-family: 'Roboto', sans-serif; /* Chọn font Roboto làm mặc định */
 }
 
-select,input,textarea{
-    border: 1px solid #c2c2c2;
-    outline-color:#C586A5;
-    border-radius:4px;
+select, input, textarea {
+  border: 1px solid #c2c2c2;
+  outline-color: #C586A5;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif; /* Đảm bảo sử dụng font Roboto cho các trường nhập liệu */
 }
 
-.active{
-    background-color: #ffebf5;
-    border-color: #C586A5 ;
+.active {
+  background-color: #ffebf5;
+  border-color: #C586A5;
 }
