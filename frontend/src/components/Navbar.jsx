@@ -48,14 +48,12 @@ const Navbar = () => {
         />
         
         <div className="group relative">
-          <Link to='/login'>
-            <img
-              onClick ={()=> token ?null:navigate('/login')}
-              src={assets.profile_icon}
-              className="w-5 cursor-pointer"
-              alt="Tài khoản"
-            />
-          </Link>
+          <img
+            onClick ={()=> token ?null:navigate('/login')}
+            src={assets.profile_icon}
+            className="w-5 cursor-pointer"
+            alt="Tài khoản"
+          />
           { token &&
           <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
             <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
